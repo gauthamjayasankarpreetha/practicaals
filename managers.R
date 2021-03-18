@@ -147,8 +147,8 @@ install.packages("VIM")
 library(VIM)
 missing_values <- aggr(managers_data, prop = FALSE, numbers = TRUE)
 
-
-
+# show summary of the content of missing values 
+summary(missing_values)
 
 
 
