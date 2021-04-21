@@ -39,7 +39,9 @@ converted_date
 converted_date <-paste(diabetes_data$Month, diabetes_data$Year, sep = "/")
 converted_date
 
-#
+# And this is how it is fixed
+# The date would contain dd/mm/yyyy
+
 converted_date <- paste("01", diabetes_data$Month, diabetes_data$Year, sep ="/")
 converted_date
 
@@ -49,6 +51,7 @@ str(diabetes_data)
 # Plot the status varibale using the plot ()function
 # convert to a factor first
 # You could plot the summary () of the status variable data
+
 plot(diabetes_data$Status)
 diabetes_data$Status <-factor(diabetes_data$Status)
 str(diabetes_data)
